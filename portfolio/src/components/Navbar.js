@@ -1,9 +1,9 @@
 import "./../App.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, HashRouter } from "react-router-dom";
 
 const Navbar = () => (
-  <section className="navbar">
+  <div className="navbar">
     <nav>
       <Link to="/" className="left-side">
         Home
@@ -14,7 +14,8 @@ const Navbar = () => (
         <Link to="/contact">Get in Contact</Link>
       </div>
     </nav>
-  </section>
+  </div>
+ 
 );
 
 export default Navbar;
