@@ -1,15 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const Contact = () => {
   return (
     <div>
       <h1>Hi. </h1>
-      <p1>
-        PLZ HIRE ME
-      </p1>
+      <p>PLZ HIRE ME</p>
     </div>
   );
 };
 
 export default Contact;
-

@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Welcome from "./components/Welcome";
-import About from "./components/About";
-import Project from "./components/Project";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Welcome from './components/Welcome';
+import About from './components/About';
+import Project from './components/Project';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 class Routes extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div class="App">
+        <div className="App">
           <Navbar />
         </div>
         <div className="routes">

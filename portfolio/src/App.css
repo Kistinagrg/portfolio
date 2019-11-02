@@ -1,16 +1,18 @@
 .App {
   text-align: center;
   background-color: whitesmoke;
-  height: 100vh;
+  height: 100px;
   margin: 0;
 }
 
 .App-logo {
   height: 40vmin;
 }
-
-.App-header {
+body {
   background-color: whitesmoke;
+}
+.App-header {
+  /* background-color: whitesmoke; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +33,7 @@
   border-right: solid 3px rgba(0, 255, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-family: "Satisfy", cursive;
+  font-family: 'Satisfy', cursive;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
   margin: 0 auto;
