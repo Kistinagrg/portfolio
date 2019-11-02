@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   background-color: whitesmoke;
-  
+  height: 100vh;
+  margin: 0;
 }
 
 .App-logo {
@@ -66,7 +67,62 @@ nav {
   padding: 3%;
 }
 
-
 .right-side a {
   margin: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* links, not final yet */
+.left-side,
+.right-side {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.left-side:hover,
+.right-side:hover {
+  color: #ffffff !important;
+  background: #3b3019;
+  transition: all 0.4s ease 0s;
+}
+
+/* about me section */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-left {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
+  float: left;
+  padding: 15px;
+}
+
+.about-right {
+  float: right;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
 }
