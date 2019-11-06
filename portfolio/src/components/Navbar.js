@@ -9,13 +9,18 @@ const Navbar = () => (
         Home
       </Link>
       <div className="right-side">
-        <Link to="/aboutme">About me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Get in Touch</Link>
+        <Link to="/aboutme" className="about-me">
+          About me
+        </Link>
+        <Link to="/projects" className="projects">
+          Projects
+        </Link>
+        <Link to="/contact" className="get-in-touch">
+          Get in Touch
+        </Link>
       </div>
     </nav>
   </div>
- 
 );
 
 export default Navbar;

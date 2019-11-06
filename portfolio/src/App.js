@@ -1,6 +1,6 @@
-import React from 'react';
-import Footer from './components/Footer';
-import Routes from './Routes';
+import React from "react";
+import Footer from "./components/Footer";
+import Routes from "./Routes";
 
 const App = () => {
   return (

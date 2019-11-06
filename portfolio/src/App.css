@@ -33,7 +33,7 @@ body {
   border-right: solid 3px rgba(0, 255, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
   margin: 0 auto;
@@ -66,44 +66,99 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 3%;
+  padding: 1%;
+  cursor: pointer;
+  text-decoration: none !important;
+  /* background: #fbe4ff; */
 }
 
-.right-side a {
+nav a {
   margin: 10px;
+  text-decoration: NONE;
 }
 
-.footer {
-  text-align: center;
-  padding: 10px;
+.right-side {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* links, not final yet */
 .left-side,
-.right-side {
-  color: #494949 !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #ffffff;
-  padding: 20px;
-  border: 4px solid #494949 !important;
-  display: inline-block;
-  transition: all 0.4s ease 0s;
+/* .about-me,
+.projects { */
+.right-side a {
+  letter-spacing: 0;
 }
 
 .left-side:hover,
-.right-side:hover {
-  color: #ffffff !important;
-  background: #3b3019;
-  transition: all 0.4s ease 0s;
+.left-side:active,
+.right-side a:hover,
+.right-side a:active {
+  /* .about-me:hover,
+.about-me:active,
+.projects:hover,
+.projects:active { */
+  letter-spacing: 5px;
 }
 
-/* about me section */
+/* top border */
+.left-side:after,
+.left-side:before,
+/* .about-me:after,
+.about-me:before,
+.projects:after,
+.projects:before */
+.right-side a:after,
+.right-side a:before {
+  backface-visibility: hidden;
+  border: 1px solid lightslategrey;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+/* bottom border */
+.left-side:hover:after,
+.left-side:hover:before,
+/* .about-me:hover:after,
+.about-me:hover:before,
+.projects:hover:after,
+.projects:hover:after { */
+.right-side a:hover:after,
+.right-side a:hover:before {
+  backface-visibility: hidden;
+  border-color: lightslategrey;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.about-me:hover:before,
+/* .about-me:hover:before,
+.projects:hover:before,
+.projects:hover:before { */
+.right-side a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+/* about section */
 .about {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center; */
+
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-around;
   align-items: center;
+  align-content: center;
+  background: url("https://gph.is/2Ob1INx");
 }
 
 .about-left {
@@ -112,6 +167,7 @@ nav {
   max-width: 1600px;
   float: left;
   padding: 15px;
+  text-decoration: underline;
 }
 
 .about-right {
@@ -120,6 +176,81 @@ nav {
   padding: 15px;
 }
 
+/* projects */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+}
+
+/* h1 {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
+  float: left;
+  padding: 15px;
+}
+
+.projects p {
+  float: right;
+  margin: 0 auto;
+  padding: 15px;
+} */
+
+/* contact section*/
+
+.icons {
+  width: 100%;
+  min-height: 50vh;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: black;
+}
+.icon-3d:hover {
+  -webkit-animation: icon3d 200ms infinite;
+  animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
+
+/* footer section, fixed position*/
 .footer {
   position: fixed;
   left: 0;
@@ -127,4 +258,6 @@ nav {
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
+  text-align: center;
+  padding: 10px;
 }
